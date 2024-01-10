@@ -1,26 +1,31 @@
-# open_file_plus
+# open_file_plugin
 
-[![pub package](https://img.shields.io/pub/v/open_file_plus.svg)](https://pub.dartlang.org/packages/open_file_plus)
+[![pub package](https://img.shields.io/pub/v/open_file_plugin)](https://pub.dev/packages/open_file_plugin)
 
 A plug-in that can call native APP to open files with string result in flutter, support iOS(DocumentInteraction) / android(intent) / PC(ffi) / web(dart:html)
 
-This package is forked from [here](https://github.com/crazecoder/open_file) to remove a dangerous permission in android
+This package is forked from [here](https://github.com/joutvhu/open_file_plus.git) to handle .apk file, some time open botthomsheet are not opening mostly on Samsunga Android 13 Fixed.
 
 ## Usage
 
-To use this plugin, add [open_file_plus](https://pub.dartlang.org/packages/open_file_plus#-installing-tab-) as a dependency in your pubspec.yaml file.
+To use this plugin, add [open_file_plugin](https://pub.dev/packages/open_file_plugin/install) as a dependency in your pubspec.yaml file.
 
 ```yaml
 dependencies:
-  open_file_plus: ^lastVersion
+  open_file_plugin: ^lastVersion
 ```
 
 ## Example
 
 ```dart
-import 'package:open_file_plus/open_file_plus.dart';
+import 'package:open_file_plugin/open_file_plugin.dart';
+
 
 OpenFile.open("/sdcard/example.txt");
+// For accessing all file permission
+OpenFile.open("/sdcard/example.txt",isAskForAllFileAccess:true);
+// For picking random file within download directory
+OpenFile.pickRandomFile();
 //OpenFile.open("/sdcard/example.txt", type: "text/plain", uti: "public.plain-text");
 ```
 
@@ -108,6 +113,7 @@ You must specify additional permissions if you want to open the respective file 
 |   Type of media   |            Permission to request            | Android version |
 |:-----------------:|:-------------------------------------------:|:---------------:|
 |     APK files     | android.permission.REQUEST_INSTALL_PACKAGES |        -        |
+|     All files     | android.permission.MANAGE_EXTERNAL_STORAGE  |       12+       |
 | Images and photos |    android.permission.READ_MEDIA_IMAGES     |       13+       |
 |      Videos       |     android.permission.READ_MEDIA_VIDEO     |       13+       |
 |    Audio files    |     android.permission.READ_MEDIA_AUDIO     |       13+       |
