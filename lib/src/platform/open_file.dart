@@ -9,14 +9,14 @@ import 'linux.dart' as linux;
 import 'macos.dart' as mac;
 import 'windows.dart' as windows;
 
-// Class of Opening File
+/// Class of Opening File
 class OpenFile {
   static const MethodChannel _channel = MethodChannel('open_file_plugin');
 
   OpenFile._();
 
   ///linuxDesktopName like 'xdg'/'gnome'
-  // Method to open file
+  /// Method to open file
   static Future<OpenResult> open(String? filePath,
       {String? type,
       String? uti,
@@ -52,7 +52,8 @@ class OpenFile {
                   ? "This operating system is not currently supported"
                   : "there are some errors when open $filePath${Platform.isWindows ? "   HINSTANCE=$windowsResult" : ""}");
     }
-    // It's data that required for opening file on native sides
+
+    /// It's data that required for opening file on native sides
     Map<String, dynamic> map = {
       "file_path": filePath!,
       "type": type,
@@ -64,7 +65,7 @@ class OpenFile {
     return OpenResult.fromJson(resultMap);
   }
 
-// Picking random file from download directory
+  /// Picking random file from download directory
   static Future<String> pickRandomFile() async {
     return await _channel.invokeMethod('pick_random_file_path');
   }

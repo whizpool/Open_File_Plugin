@@ -3,6 +3,7 @@ import 'dart:async';
 import '../../open_file_plugin.dart';
 import 'web.dart' as web;
 
+/// Class to use open file for web
 class OpenFile {
   OpenFile._();
 

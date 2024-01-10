@@ -1,10 +1,13 @@
-String parseArgs(List<String> args) {
-  final commandList = args.map((arg) =>
-      arg
-          .replaceAll(' ', '\\ ')
-          .replaceAll('(', '\\(')
-          .replaceAll(')', '\\)'))
-      .toList();
+/// ParseAgs class to chanage some characters
+class ParseArgs {
+  static String parseArgs(List<String> args) {
+    final commandList = args
+        .map((arg) => arg
+            .replaceAll(' ', '\\ ')
+            .replaceAll('(', '\\(')
+            .replaceAll(')', '\\)'))
+        .toList();
 
-  return commandList.join(' ');
+    return commandList.join(' ');
+  }
 }

@@ -1,6 +1,6 @@
 name: open_file_plugin
-description: "A plugin to handle file opening"
-version: 0.0.2
+description: "The \"Open File plugin\" streamlines file handling by seamlessly managing various file types within the application. Users can effortlessly view files in their default software, enhancing accessibility and simplifying workflows."
+version: 0.0.3
 homepage: https://github.com/whizpool/Open_File_Plugin.git
 
 environment:
