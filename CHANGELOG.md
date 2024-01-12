@@ -7,3 +7,6 @@
 ## 0.0.3
 
 * TODO: Make function within class and add description to code
+## 0.0.4
+
+* TODO: Fix ios podspec issue

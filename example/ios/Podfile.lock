@@ -36,7 +36,7 @@ PODS:
   - Flutter (1.0.0)
   - integration_test (0.0.1):
     - Flutter
-  - openfile (0.0.1):
+  - open_file_plugin (0.0.4):
     - Flutter
   - SDWebImage (5.18.8):
     - SDWebImage/Core (= 5.18.8)
@@ -47,7 +47,7 @@ DEPENDENCIES:
   - file_picker (from `.symlinks/plugins/file_picker/ios`)
   - Flutter (from `Flutter`)
   - integration_test (from `.symlinks/plugins/integration_test/ios`)
-  - openfile (from `.symlinks/plugins/openfile/ios`)
+  - open_file_plugin (from `.symlinks/plugins/open_file_plugin/ios`)
 
 SPEC REPOS:
   trunk:
@@ -63,8 +63,8 @@ EXTERNAL SOURCES:
     :path: Flutter
   integration_test:
     :path: ".symlinks/plugins/integration_test/ios"
-  openfile:
-    :path: ".symlinks/plugins/openfile/ios"
+  open_file_plugin:
+    :path: ".symlinks/plugins/open_file_plugin/ios"
 
 SPEC CHECKSUMS:
   DKImagePickerController: b512c28220a2b8ac7419f21c491fc8534b7601ac
@@ -72,10 +72,10 @@ SPEC CHECKSUMS:
   file_picker: 15fd9539e4eb735dc54bae8c0534a7a9511a03de
   Flutter: f04841e97a9d0b0a8025694d0796dd46242b2854
   integration_test: 13825b8a9334a850581300559b8839134b124670
-  openfile: be44b6af14d01263b622bc04d596c59b4c35050d
+  open_file_plugin: 772183e123b3baa67f8d64eaf807ebac3bfbbdd7
   SDWebImage: a81bbb3ba4ea5f810f4069c68727cb118467a04a
   SwiftyGif: 93a1cc87bf3a51916001cf8f3d63835fb64c819f
 
-PODFILE CHECKSUM: 837bf52728b9b92c5c25a289a683b9e4ac787f79
+PODFILE CHECKSUM: 5819c4d4c6b2d94fdb7ee4bceafdf5d9c03f35bd
 
 COCOAPODS: 1.14.3
