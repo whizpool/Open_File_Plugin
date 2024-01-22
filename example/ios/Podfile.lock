@@ -36,7 +36,7 @@ PODS:
   - Flutter (1.0.0)
   - integration_test (0.0.1):
     - Flutter
-  - open_file_plugin (0.0.4):
+  - open_file_plugin (0.0.5):
     - Flutter
   - SDWebImage (5.18.8):
     - SDWebImage/Core (= 5.18.8)

@@ -4,7 +4,7 @@
 #
 Pod::Spec.new do |s|
   s.name             = 'open_file_plugin'
-  s.version          = '0.0.4'
+  s.version          = '0.0.5'
   s.summary          = 'A plugin to open file'
   s.description      = <<-DESC
   The \"Open File plugin\" streamlines file handling by seamlessly managing various file types within the application. Users can effortlessly view files in their default software, enhancing accessibility and simplifying workflows
@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.homepage         = 'https://github.com/whizpool/Open_File_Plugin'
   s.license          = { :file => '../LICENSE',:type => 'BSD' }
   s.author           = { 'Whizpool' => 'whizpool.com' }
-  s.source           = { :git => 'https://github.com/whizpool/Open_File_Plugin.git', :tag => 'v0.0.4'}
+  s.source           = { :git => 'https://github.com/whizpool/Open_File_Plugin.git', :tag => 'v0.0.5'}
   s.source_files = 'Classes/**/*'
   s.public_header_files = 'Classes/**/*.h'
   s.dependency 'Flutter'

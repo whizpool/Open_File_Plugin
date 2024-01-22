@@ -157,12 +157,10 @@ private  boolean isAskForAllFileAccess;
                     ActivityCompat.requestPermissions(activity, new String[]{Manifest.permission.READ_MEDIA_AUDIO}, REQUEST_CODE);
                     return false;
                 }
+            }else if (!hasPermission(Manifest.permission.MANAGE_EXTERNAL_STORAGE)&&!hasManageAllFilesAccessPermission() && isAskForAllFileAccess) {
+                requestManageAllFilesAccessPermission();
+                return false;
             }
-
-//            if (!hasPermission(Manifest.permission.MANAGE_EXTERNAL_STORAGE)) {
-//                ActivityCompat.requestPermissions(activity, new String[]{Manifest.permission.MANAGE_EXTERNAL_STORAGE}, REQUEST_CODE);
-//                return false;
-//            }
 
         } else {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R &&!hasManageAllFilesAccessPermission() && isAskForAllFileAccess) {

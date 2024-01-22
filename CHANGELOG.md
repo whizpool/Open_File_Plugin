@@ -10,3 +10,6 @@
 ## 0.0.4
 
 * TODO: Fix ios podspec issue
+## 0.0.5
+
+* TODO: Fix All file access issue on AndroidSKD >=13
